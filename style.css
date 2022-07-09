@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: sans-serif;
+    line-height: 1.1;
+}
+
+.flex--container{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    display: grid;
+    justify-items: center;
+    height: 100vh;
+}
+
+.container__todo{
+margin-top:3.2rem;
+gap: 5rem;
+}
+
+.text--box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+    position: relative;
+}
+.move{
+    position: absolute;
+    left: 5%;
+    top: 30%;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: #ced4da;
+    transition: all 0.4s ease-in-out;
+}
+.text--box__input{
+    font-size: 1.8rem;
+    width: 30rem;
+    height: 3rem;
+    border: none;
+    padding: 1.8rem 1.2rem;
+    border-radius: 1.2rem;
+    transition: all 0.3s;
+    box-shadow:0.2rem 0.25rem 0.1rem rgba(0,0,0,0.2),-0.2rem 0rem 0.1rem rgba(0,0,0,0.2);;
+}
+/* .text--box__input:focus ~ label,.text--box__input:not(:placeholder-shown) ~ label{
+    top: -30%;
+    color: #1864ab;
+    background-color: #fff;
+    
+
+} */
+
+.btn:link{
+    text-decoration:none;
+    font-size: 3rem;
+    color:#1864ab;
+    transition: all 0.3s ease-in-out;
+    
+}
+.add:hover{
+    border-radius: 50%; 
+    transform: translateY(-10%);
+}
+.add:active{
+    transform: translateY(0);
+}
+.add{
+    font-size: 2.4rem;
+    border-radius: 50%;
+    transform: translateY(10%);
+    box-shadow: 0.2rem 0.25rem 0.1rem rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in-out;
+    
+}
+.text--box__input:focus{
+    outline: none;
+    /* border:solid 0.2rem #1864ab; */
+    box-shadow:0.4rem 0.45rem 0.1rem rgba(0,0,0,0.2),-0.4rem 0rem 0.1rem rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in-out;
+}
+.list{
+    gap: 3rem;
+}
+
+.list--items{
+
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+}    
+.list--items::marker{
+    color: #888;
+}
+.cross {
+    /* display: inline-block; */
+/* float: right; */
+margin-left: auto;
+}
